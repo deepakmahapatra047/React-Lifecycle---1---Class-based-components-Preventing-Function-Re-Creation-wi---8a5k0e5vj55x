@@ -7,7 +7,7 @@ class App extends React.Component {
 
   handleClick(){
     this.setState({count: this.state.count+1})
-    console.log("rendered")
+   
   }
   constructor(props){
     super(props)
@@ -17,6 +17,7 @@ class App extends React.Component {
   }
 
   render() {
+    console.log("rendered")
     return (
       <div id="main">
           <div id="count">{this.state.count}</div>
